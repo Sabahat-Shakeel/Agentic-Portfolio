@@ -19,25 +19,31 @@ export default function Frontend() {
           <li>OpenAI Agent SDK</li>
         </ul>
       </div>
-      <div className="max-w-5xl mx-auto px-3 flex flex-col items-center justify-center text-center mt-10">
-              <h1 className="text-xl font-semibold p-5">Simple WorkFlow Graph </h1>
-               <Image
-                        src="/frnt.png"
-                        alt="Project 2"
-                        width={500}
-                        height={150}
-                        priority
-                        className="max-w-5xl h-1/3 object-cover rounded-md mb-4 border-8 border-black"
-                      />
+   
+    <div className="max-w-5xl mx-auto px-3 flex flex-col items-center justify-center text-center mt-10">
+      <h1 className="text-xl font-semibold p-5">Simple WorkFlow Graph</h1>
+      <div className="w-full">
+        <Image
+          src="/frnt.png"
+          alt="Project 2"
+          width={500}
+          height={150}
+          priority
+          className="w-full max-w-[500px] h-auto object-contain rounded-md mb-4 border-4 sm:border-8 border-black"
+        />
+          
                        <Image
                         src="/front.png"
                         alt="Project 2"
                         width={500}
                         height={150}
                         priority
-                        className="max-w-5xl h-1/3 object-cover rounded-md mb-4 mt-16 border-8 border-black"
+                         className="w-full max-w-[500px] h-auto object-contain rounded-md mb-4 border-4 sm:border-8 border-black"
                       />
-            </div>
+
+      </div>
+    </div>
+          
     </section>
   );
 }

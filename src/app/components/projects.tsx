@@ -18,7 +18,7 @@ export default function ProjectCards() {
    
     
       {/* Card 1 */}
-      <div className="bg-white rounded-lg shadow-lg  shadow-blue-600 overflow-hidden flex flex-col items-center text-center p-6 w-full max-w-md hover:border-2 hover:border-black/20 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500">
+      <div className="bg-white rounded-lg shadow-lg  shadow-blue-600 overflow-hidden flex flex-col items-center text-center p-6 w-full max-w-md hover:border-2 hover:border-black/20 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500 active:shadow-lg active:shadow-pink-500">
         <Link href="/components/refund">
         <Image
 
@@ -36,7 +36,7 @@ export default function ProjectCards() {
         </Link>
       </div>
       {/* Card 2 */}
-      <div className="bg-white rounded-lg shadow-lg shadow-blue-600 overflow-hidden flex flex-col items-center text-center p-6 w-full max-w-md hover:border-2  hover:border-black/20 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500">
+      <div className="bg-white rounded-lg shadow-lg shadow-blue-600 overflow-hidden flex flex-col items-center text-center p-6 w-full max-w-md hover:border-2  hover:border-black/20 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500 active:shadow-lg active:shadow-pink-500" >
        <Link href="/components/weather">
         <Image
           src="/weather.jpg"
@@ -56,7 +56,7 @@ export default function ProjectCards() {
 
 
       {/* Card 3 */}
-      <div className="bg-white rounded-lg shadow-lg shadow-blue-600 overflow-hidden flex flex-col items-center text-center p-6 w-full max-w-md hover:border-2  hover:border-black/20 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500">
+      <div className="bg-white rounded-lg shadow-lg shadow-blue-600 overflow-hidden flex flex-col items-center text-center p-6 w-full max-w-md hover:border-2  hover:border-black/20 transition-all duration-300 hover:shadow-lg hover:shadow-pink-500 active:shadow-lg active:shadow-pink-500">
          <Link href="/components/frontend">
         <Image
           src="/frontend.jpg"
