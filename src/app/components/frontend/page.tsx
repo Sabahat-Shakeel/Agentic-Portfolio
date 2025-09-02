@@ -11,7 +11,7 @@ export default function Frontend() {
           className="text-blue-600 hover:text-blue-800 underline text-2xl font-semibold mb-6 flex gap-1"
         ><FcLink className="text-blue-600 hover:text-blue-800 underline pt-2"/> Go to Front end AI Assistant
         </Link>
-        <h1 className="text-3xl lg:text-4xl font-bold underline text-black/60 mb-4">
+        <h1 className="text-3xl lg:text-4xl font-bold underline text-black/80 mb-4">
           Features
         </h1>
         <ul className="list-none space-y-2 text-base lg:text-lg text-gray-600">
@@ -21,7 +21,7 @@ export default function Frontend() {
       </div>
    
     <div className="max-w-5xl mx-auto px-3 flex flex-col items-center justify-center text-center mt-10">
-      <h1 className="text-xl font-semibold p-5">Simple WorkFlow Graph</h1>
+      <h1 className="text-xl font-semibold p-5 text-black/80">Simple WorkFlow Graph</h1>
       <div className="w-full">
         <Image
           src="/frnt.png"

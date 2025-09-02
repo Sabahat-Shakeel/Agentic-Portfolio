@@ -20,16 +20,16 @@ function Navbar() {
         className="portrait:flex portrait:justify-around portrait:items-start "
       
       >
-        <div className="md:hidden  w-full py-2  cursor-pointer mt-1 fixed top-0 z-20 "   
+        <div className="md:hidden w-full py-2 cursor-pointer mt-1 fixed top-0 z-20 "   
         
         onClick={toggleMenu}>
          
-          <div className="w-4 h-1 ml-2 bg-neutral-700 mb-1 rounded-t-full"></div>
-          <div className="w-4 h-1 ml-2 bg-neutral-700 mb-1 rounded-b-full "></div>
+          <div className="w-4 h-1 ml-2 bg-neutral-700 mb-1 rounded-t-full mt-2"></div>
+          <div className="w-4 h-1 ml-2 bg-neutral-700 mb-1 rounded-b-full mt-1"></div>
         </div>
-        <div className="sm:hidden flex justify-center fixed top-0 z-20  ">
-          <h1 className={`font-bold ml-4 text-lg text-black/70  p-2 `}>
-            Sabahat Portfolio
+        <div className="sm:hidden flex justify-center w-80   ">
+          <h1 className={`${merrweight.className}  ml-4 text-lg text-black/70  p-4 `}>
+            Sabahat
           </h1>
           
         </div>
@@ -55,14 +55,14 @@ function Navbar() {
               </Link>
             </li>
             <li className="hover:scale-105">
-              <Link href="#project" onClick={toggleMenu}>
+              <Link href="/#project" onClick={toggleMenu}>
                 Projects
               </Link>
             </li>
             
             
             <li className="hover:scale-105">
-              <Link href="#contact" onClick={toggleMenu}>
+              <Link href="mailto:syedasabahatshakeel@gmail.com" onClick={toggleMenu}>
                 Contact
               </Link>
             </li>
@@ -91,11 +91,11 @@ function Navbar() {
               <Link href="/">Home</Link>
             </li>
             <li className=" hover:ease-in-out transition-transform" >
-              <Link href="/">Projects</Link>
+              <Link href="/#projects">Projects</Link>
             </li>
             
             <li className=" hover:ease-in-out transition-transform" >
-              <Link href="mailto:sbthskelel@gmail.com">Contact</Link>
+              <Link href="mailto:syedasabahatshakeel@gmail.com">Contact</Link>
             </li>
           </ul>
         </nav>
