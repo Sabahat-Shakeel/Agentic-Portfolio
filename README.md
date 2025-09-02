@@ -1,3 +1,36 @@
+# 🚀 Agentic AI Portfolio
+
+This project demonstrates an **Agentic AI system** powered by the **OpenAI Agents SDK**, integrated with **Next.js** for the frontend and **Chainlit** for the conversational UI.  
+The goal is to build a modular, scalable, and portfolio-ready agent architecture supporting **multi-agent orchestration, HITL, guardrails, and MCP integration**.
+
+---
+
+## ✨ Features
+- ⚡ **Next.js Frontend** – clean UI with TailwindCSS.
+- 🤖 **OpenAI Agents SDK** – modular agent building and orchestration.
+- 🔗 **Chainlit Integration** – interactive chat-based interface.
+- 🧩 **MCP (Model Context Protocol)** ready for external tool integration.
+- ☁️ **Cross-platform deployment** (Vercel, Hugging Face, Railway).
+
+---
+
+## 🛠️ Tech Stack
+- [Next.js](https://nextjs.org/) (Frontend Framework)
+- [Tailwind CSS](https://tailwindcss.com/) (Styling)
+- [Chainlit](https://docs.chainlit.io/) (Chat UI)
+- [OpenAI Agents SDK](https://platform.openai.com/docs/agents) (Agent Orchestration)
+- [Python](https://www.python.org/) (Backend logic)
+
+---
+
+## 📦 Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
