@@ -6,7 +6,7 @@ function HomePage() {
 
 
   <h1
-    className={`${merrweight.className} text-black/80 text-4xl sm:text-5xl lg:text-6xl font-extrabold underline text-center px-4 sm:px-7 lg:px-28 lg:pt-11`}
+    className={`${merrweight.className} text-black/80 text-4xl sm:text-5xl lg:text-6xl font-extrabold underline text-center px-4 sm:px-7 lg:px-28 lg:pt-11 pt-20`}
   >
     Future of Automation with Agentic AI
   </h1>
