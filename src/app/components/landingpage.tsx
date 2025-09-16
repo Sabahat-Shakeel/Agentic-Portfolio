@@ -6,11 +6,11 @@ function HomePage() {
 
 
   <h1
-    className={`${merrweight.className} text-black/80 text-4xl sm:text-5xl lg:text-6xl font-extrabold underline text-center px-4 sm:px-7 lg:px-28 lg:pt-11 pt-20`}
+    className={`${merrweight.className} text-white/85 text-4xl sm:text-5xl lg:text-6xl font-extrabold  underline text-center px-4 sm:px-7 lg:px-28 lg:pt-11 pt-20`}
   >
     Future of Automation with Agentic AI
   </h1>
-  <p className="text-center text-pretty text-base sm:text-lg lg:text-xl mt-6 sm:mt-8 lg:mt-11 px-4 sm:px-6 max-w-3xl text-black/60">
+  <p className="text-center text-pretty text-base sm:text-lg lg:text-xl mt-6 sm:mt-8 lg:mt-11 px-4 sm:px-6 max-w-3xl text-white/60">
     Building intelligent, autonomous agents that think, adapt, and collaborate. Transforming static workflows into dynamic, human-AI ecosystems.
   </p>
 </div>

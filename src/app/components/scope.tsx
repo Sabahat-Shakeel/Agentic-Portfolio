@@ -4,10 +4,10 @@ const merrweight = Merriweather({subsets:['latin-ext'] , weight :['900']})
 function FutureScope() {
     return (
     <div className="mt-24 pl-4 pb-11">
-      <h2 className={`${merrweight.className}  text-2xl font-bold text-gray-800 mb-4`}>
+      <h2 className={`${merrweight.className}  text-2xl font-bold text-white/60 mb-4`}>
         Future Scope of the Project
       </h2>
-      <ul className="space-y-3 text-gray-700 leading-relaxed">
+      <ul className="space-y-3 text-white/50 leading-relaxed">
         <li>
           <span className={ `${merrweight.className} `}>Advanced Multi-Agent Orchestration:</span>{" "}
           Extend the system to coordinate multiple specialized agents (e.g., web,

@@ -3,10 +3,10 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer >
-        <h3 className="font-semibold  flex flex-row justify-center text-black/70 text-sm p-2">
+        <h3 className="font-thin  flex flex-row justify-center text-[#72ff74] z-10 [text-shadow:0_0_1px_#72ff74] text-sm p-2">
                © 2025 Sabahat Shakeel Showcase
         </h3>
-       <div className="flex flex-row justify-center gap-4 pb-4">
+       <div className="flex flex-row justify-center gap-4 pb-4 shadow-sm  ">
          <Link href = "https://www.linkedin.com/in/syeda-sabahat-shakeel">
         <Image
         src ="/linkedin.png"
