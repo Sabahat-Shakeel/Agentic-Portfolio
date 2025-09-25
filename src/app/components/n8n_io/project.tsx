@@ -19,7 +19,7 @@ export default function Projectneightn(){
 
 
                 
-         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl md:max-w-5xl mx-auto min-h-screen items-center justify-center p-4">
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl md:max-w-5xl mx-auto min-h-screen items-center justify-center p-10">
    
     
       {/* Card 1 */}
