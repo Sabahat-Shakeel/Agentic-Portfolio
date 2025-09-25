@@ -13,7 +13,7 @@ export default function ProjectCards() {
 
     <div className="flex flex-col items-center justify-center pt-16">
 
-        <h1 className={` ${merrweight.className} font-bold text-2xl text-white/80`}>OpenAI Agents Projects</h1>
+        <h1 className={` ${merrweight.className} font-bold text-center text-4xl text-white/80`}>OpenAI Agents Projects</h1>
 </div>
 
          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto min-h-screen items-center justify-center p-4">

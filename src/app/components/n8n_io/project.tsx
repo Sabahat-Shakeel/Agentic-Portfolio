@@ -11,15 +11,15 @@ export default function Projectneightn(){
        <div className="  mx-auto min-h-screen items-center justify-center">
         <hr className="mt-24 opacity-35 shadow-inner shadow-lime-300"/> 
 
-            <div className="flex flex-col items-center justify-center pt-16">
+            <div className="flex flex-col space-y-7 text-center items-center justify-center pt-16">
 
-                          <h1 className={`${merrweight.className} text-4xl font-bold text-white/80`}> <strong className="text-[#ef4e39]"> N8N </strong>  Automation Projects</h1>
+                          <h1 className={`${merrweight.className}  text-4xl font-bold text-white/80`}> <strong className="text-[#ef4e39] "> N8N </strong>  Automation Projects</h1>
                           <p className="m-3 text-white/60">Integrate n8n backend with Lovable frontend to deliver simple and user-friendly experiences <strong className="text-[#e74266] font-thin"> (Vibe Coding) </strong> </p>
                 </div>
 
 
                 
-         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl md:max-w-5xl mx-auto min-h-screen items-center justify-center p-4">
+         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-3xl md:max-w-5xl mx-auto min-h-screen items-center justify-center p-4">
    
     
       {/* Card 1 */}
