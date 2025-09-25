@@ -1,6 +1,6 @@
 "use client"
-import { Merriweather } from "next/font/google"
-const merrweight = Merriweather({subsets:['latin-ext'] , weight :['900']})
+// import { Merriweather } from "next/font/google"
+// const merrweight = Merriweather({subsets:['latin-ext'] , weight :['900']})
 
 export default function Neightn() {
   return (
