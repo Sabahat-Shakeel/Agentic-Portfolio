@@ -21,7 +21,7 @@ export default function ProjectCards() {
     
       {/* Card 1 */}
 
-    <div className="bg-black/80 rounded-lg shadow-lg  shadow-blue-600 overflow-hidden flex flex-col items-center text-center p-6 w-full max-w-md  hover:scale-105  hover:shadow-lg hover:shadow-pink-500 active:shadow-lg active:shadow-pink-500">
+    <div className="bg-black/80 rounded-lg shadow-lg  shadow-blue-600 overflow-hidden flex flex-col items-center text-center p-6 w-full max-w-md  hover:scale-105  hover:shadow-lg hover:shadow-pink-500 active:shadow-lg active:shadow-pink-500 ">
         <Link href="/components/panacloud">
         <Image
 
@@ -34,7 +34,8 @@ export default function ProjectCards() {
         <h1 className="text-2xl md:text-3xl font-light text-[#72ff74] [text-shadow:0_0_1px_#72ff74] mb-2">Panacloud AI Assistant</h1>
         <p className="text-base md:text-lg text-white/80 mb-4">Advanced AI Automation</p>
         <p className="text-sm md:text-base text-white/60 h-28">
-         The Panacloud AI Assistant works as both an Orchestrator and a Triage Agent — orchestrating DevOps and OpenAI agents, while efficiently triaging tasks related to web and mobile app development.
+        The panacloud AI assistant acts as both an orchestrator and triage agent — managing devops and openai agents, while handling tasks for web and mobile app development.
+
         </p>
         </Link>
       </div>
