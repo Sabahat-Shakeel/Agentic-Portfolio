@@ -6,9 +6,9 @@ export default function Neightn() {
   return (
     <main className="h-96 gap-11 w-full flex flex-col items-center justify-center p-5 mt-11 ">
     
-      <h1 className={`${merrweight.className} text-4xl font-bold text-white/80`}>
+      {/* <h1 className={`${merrweight.className} text-4xl font-bold text-white/80`}>
         N8n.io Projects
-      </h1>
+      </h1> */}
 
   
       <div className="w-96 h-80 flex items-center shadow-blue-0 justify-center rounded-2xl shadow-lg drop-shadow-2xl bg-black/70 border-gray-700 border relative overflow-hidden portrait:w-80 opacity-75 ">

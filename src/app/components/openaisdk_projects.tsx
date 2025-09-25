@@ -1,4 +1,4 @@
-// components/ProjectCards.js
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import { Merriweather } from "next/font/google"
@@ -9,6 +9,8 @@ export default function ProjectCards() {
 
     <div className="  mx-auto min-h-screen items-center justify-center">
 
+       <hr className="mt-24 opacity-35 shadow-inner shadow-lime-300"/> 
+
     <div className="flex flex-col items-center justify-center pt-16">
 
         <h1 className={` ${merrweight.className} font-bold text-2xl text-white/80`}>OpenAI Agents Projects</h1>
@@ -17,7 +19,7 @@ export default function ProjectCards() {
          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto min-h-screen items-center justify-center p-4">
    
     
-      {/* Card 4 */}
+      {/* Card 1 */}
 
     <div className="bg-black/80 rounded-lg shadow-lg  shadow-blue-600 overflow-hidden flex flex-col items-center text-center p-6 w-full max-w-md  hover:scale-105  hover:shadow-lg hover:shadow-pink-500 active:shadow-lg active:shadow-pink-500">
         <Link href="/components/panacloud">
@@ -27,7 +29,7 @@ export default function ProjectCards() {
           alt="Project 4"
           width={500}
           height={192}
-          className="w-full h-48 object-cover rounded-md mb-4"
+          className="w-full h-48 object-cover rounded-md mb-4 shadow shadow-[#c40279]"
         />
         <h1 className="text-2xl md:text-3xl font-light text-[#72ff74] [text-shadow:0_0_1px_#72ff74] mb-2">Panacloud AI Assistant</h1>
         <p className="text-base md:text-lg text-white/80 mb-4">Advanced AI Automation</p>
@@ -49,7 +51,7 @@ export default function ProjectCards() {
           alt="Project 1"
           width={500}
           height={192}
-          className="w-full h-48 object-cover rounded-md mb-4"
+          className="w-full h-48 object-cover rounded-md mb-4 shadow shadow-[#c40279]"
         />
         <h1 className="text-2xl md:text-3xl font-light text-[#72ff74] [text-shadow:0_0_1px_#72ff74] mb-2">Order Refund AI Assistant</h1>
         <p className="text-base md:text-lg text-white/80 mb-4">Advanced AI Automation</p>
@@ -69,7 +71,7 @@ export default function ProjectCards() {
           alt="Project 2"
           width={500}
           height={192}
-          className="w-full h-48 object-cover rounded-md mb-4"
+          className="w-full h-48 object-cover rounded-md mb-4 shadow shadow-[#c40279]"
         />
         <h1 className="text-2xl md:text-3xl font-light  text-[#72ff74] [text-shadow:0_0_1px_#72ff74] mb-2">Weather AI Assistant</h1>
         <p className="text-base md:text-lg text-white/80 mb-4">Advanced AI Automation</p>
@@ -89,7 +91,7 @@ export default function ProjectCards() {
           alt="Project 3"
           width={500}
           height={192}
-          className="w-full h-48 object-cover rounded-md mb-4"
+          className="w-full h-48 object-cover rounded-md mb-4 shadow shadow-[#c40279]"
         />
         <h1 className="text-2xl md:text-3xl font-light  text-[#72ff74] [text-shadow:0_0_1px_#72ff74] mb-2">Front End AI Assistant</h1>
         <p className="text-base md:text-lg text-white/80 mb-4">Advanced AI Automation</p>
@@ -98,8 +100,42 @@ export default function ProjectCards() {
         </p>
      </Link>
       </div>
+
+
+      
     
     </div>
+
+
+     <main className="h-96 gap-11 w-full flex flex-col items-center justify-center p-5 mt-11 ">
+
+    
+      <div className="w-96 h-80 flex items-center shadow-blue-0 justify-center rounded-2xl shadow drop-shadow-sm shadow-lime-700 bg-black/70 border-gray-700 border relative overflow-hidden portrait:w-80 opacity-75 ">
+         <h2 className="text-xl font-semibold text-[#72ff74] z-10 [text-shadow:0_0_20px_#72ff74] ">
+          Working on ...
+        </h2>
+
+        <div className="absolute inset-0 bg-gradient-to-r from-transparent via-green-900 to-transparent animate-[shimmer_2s_infinite]" />
+      </div>
+
+   
+      <style jsx>{`
+        @keyframes shimmer {
+          0% {
+            transform: translateX(-100%);
+          }
+          100% {
+            transform: translateX(100%);
+          }
+        }
+      `}
+      </style>
+
+
+
+     </main>
+     
+
     </div>
    
   );
