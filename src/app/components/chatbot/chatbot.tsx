@@ -118,7 +118,7 @@ const ChatBot = () => {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-16 right-6 w-96 h-[480px] z-40 border-2 border-[#ef4e39] bg-black rounded-2xl shadow overflow-hidden flex flex-col">
+        <div className="fixed bottom-16 right-3 w-96 portrait:h-[500px] h-[450px] z-40 border-2 border-[#ef4e39] bg-black rounded-2xl shadow overflow-hidden flex flex-col">
           {/* Header */}
           <div className="p-4 border-b border-primary/10 bg-black flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
@@ -156,7 +156,7 @@ const ChatBot = () => {
           </div>
 
           {/* Input */}
-          <div className="p-4 border-t border-primary/10 bg-black flex gap-2">
+          <div className="p-4 border-t border-primary/10 text-white/90 bg-black flex gap-2">
             <Input
               value={inputValue}
               onChange={(e) => setInputValue(e.target.value)}

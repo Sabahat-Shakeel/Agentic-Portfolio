@@ -7,7 +7,7 @@ function FutureScope() {
       <h2 className={`${merrweight.className}  text-2xl font-bold text-white/60 mb-4`}>
         Future Scope of the Project
       </h2>
-      <ul className="space-y-3 text-white/50 leading-relaxed">
+      <ul className="space-y-6 text-white/50 leading-relaxed">
         <li>
           <span className={ `${merrweight.className} `}>N8N-Powered Automations:</span>{" "}
           Expand chatbot workflows with n8n for smarter memory handling, event-driven triggers, and seamless backend orchestration
