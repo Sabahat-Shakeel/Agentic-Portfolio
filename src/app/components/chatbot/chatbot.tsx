@@ -118,7 +118,7 @@ const ChatBot = () => {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-20 w-96 md:right-6 portrait:h-[500px] h-[450px] z-40 border-2 border-[#ef4e39] bg-black rounded-2xl shadow overflow-hidden flex flex-col">
+        <div className="fixed bottom-20 w-80 md:right-6 portrait:h-[500px] h-[450px] z-40 border-2 border-[#ef4e39] bg-black rounded-2xl shadow overflow-hidden flex flex-col">
           {/* Header */}
           <div className="p-4 border-b border-primary/10 bg-black flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
@@ -140,7 +140,7 @@ const ChatBot = () => {
                 <div
                   className={`px-3 py-2 rounded-2xl max-w-[80%] ${
                     message.sender === "user"
-                      ? "bg-[#ef4e39] text-white/90 rounded-br-md"
+                      ? "bg-[#ef4e39] text-white/90 rounded-br-md "
                       : " text-white/90 rounded-bl-md"
                   }`}
                 >
