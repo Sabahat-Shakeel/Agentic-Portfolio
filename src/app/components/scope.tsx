@@ -9,42 +9,26 @@ function FutureScope() {
       </h2>
       <ul className="space-y-3 text-white/50 leading-relaxed">
         <li>
-          <span className={ `${merrweight.className} `}>Advanced Multi-Agent Orchestration:</span>{" "}
-          Extend the system to coordinate multiple specialized agents (e.g., web,
-          data, and mobile agents) through <strong>OpenAI Agents SDK</strong> for
-          complex workflows.
+          <span className={ `${merrweight.className} `}>N8N-Powered Automations:</span>{" "}
+          Expand chatbot workflows with n8n for smarter memory handling, event-driven triggers, and seamless backend orchestration
         </li>
         <li>
-          <span className={ `${merrweight.className} `}>MCP Integration:</span> Implement{" "}
-          <strong>Model Context Protocol (MCP)</strong> to enable seamless
-          communication between agents and external tools, APIs, and custom
-          backends.
+          <span className={ `${merrweight.className} `}>Lovable Frontend/Backend Integration:</span> Improve lovable UI/UX with real-time chatbot experiences, personalized web apps, and smooth backend connectivity.
         </li>
         <li>
-          <span className={ `${merrweight.className} `}>Python-Powered Extensibility:</span>{" "}
-          Leverage Python’s async ecosystem for scaling real-time responses, error
-          handling, and optimized execution loops.
+          <span className={ `${merrweight.className} `}>Vibe Coding Assistance:</span>{" "}
+         Extend AI-assisted coding where prompts generate most of the code, and gradually improve the system debugging, error-handling, and code understanding to overcome vibe coders current limitations.
         </li>
         <li>
-          <span className={ `${merrweight.className} `}>Cross-Platform Deployment:</span> Deploy
-          agents across web, mobile, and cloud environments with modular and
-          stateless design patterns.
+          <span className={ `${merrweight.className} `}>OpenAI Agent SDK Expansion:</span> Upgrade chatbot capabilities from basic to advanced multi-agent orchestration, enabling full AI-powered features with contextual intelligence.
         </li>
         <li>
           <span className={ `${merrweight.className} `}>Intelligent Guardrails:</span> Add
           guardrail-driven agent outputs to ensure safety, consistency, and
           reliability in AI-powered decision-making.
         </li>
-        <li>
-          <span className={ `${merrweight.className} `}>Pluggable Tooling Architecture:</span>{" "}
-          Support integration with third-party APIs, databases, and user-defined
-          tools for flexible automation pipelines.
-        </li>
-        <li>
-          <span className={ `${merrweight.className} `}>Human-in-the-Loop (HITL):</span> Integrate
-          approval checkpoints where human validation is required for critical AI
-          decisions.
-        </li>
+        
+        
         <li>
           <span className={ `${merrweight.className} `}>Observability & Tracing:</span> Add
           real-time tracing and monitoring of agent executions to improve

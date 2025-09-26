@@ -20,7 +20,7 @@ function Navbar() {
         className="portrait:flex portrait:justify-around portrait:items-start "
       
       >
-        <div className="md:hidden w-full py-2 cursor-pointer mt-1 fixed top-0 z-20 "   
+        <div className="md:hidden w-full py-2 cursor-pointer  fixed top-0 z-20 bg-black"   
         
         onClick={toggleMenu}>
          
@@ -28,7 +28,7 @@ function Navbar() {
           <div className="w-4 h-1 ml-2 bg-[#72ff74] z-10 [text-shadow:0_0_20px_#72ff74] mb-1 rounded-b-full mt-1"></div>
         </div>
         <div className="sm:hidden flex justify-center w-80   ">
-          <h1 className={` font-extralight  ml-4 text-lg text-[#72ff74] [text-shadow:0_0_1px_#72ff74]  p-4 `}>
+          <h1 className={` font-extralight  ml-4 text-lg text-[#72ff74] [text-shadow:0_0_1px_#72ff74] z-30 p-4 `}>
             Sabahat
           </h1>
           
@@ -69,9 +69,9 @@ function Navbar() {
             {/* <hr className='shadow-2xl text-slate-500 shadow-slate-400'/> */}
           </ul>
       
-<div className={`${merrweight.className} mt-20 font-serif text-white/70 text-xl  `}>
+<div className={`${merrweight.className} mt-20 font-serif text-white/80 text-xl  `}>
 
- <Link href={"https://github.com/Sabahat-Shakeel"}><button className="border-2 rounded border-gray-300 px-2 py-1 bg-black/90 hover:underline hover:underline-offset-4 hover:opacity-85">
+ <Link href={"https://github.com/Sabahat-Shakeel"}><button className="rounded px-2 py-1 bg-[#ef4e39] hover:underline hover:underline-offset-4 hover:opacity-85">
     Go To Github 
   </button> 
   </Link> 

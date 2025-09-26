@@ -12,7 +12,7 @@ export default function Neightn() {
 
   
       <div className="w-96 h-80 flex items-center shadow-blue-0 justify-center rounded-2xl shadow-lg drop-shadow-2xl bg-black/70 border-gray-700 border relative overflow-hidden portrait:w-80 opacity-75 ">
-         <h2 className="text-xl font-semibold text-[#72ff74] z-10 [text-shadow:0_0_20px_#72ff74] ">
+         <h2 className="text-xl font-semibold text-[#72ff74]  z-10 [text-shadow:0_0_20px_#72ff74] ">
           Working on ...
         </h2>
 

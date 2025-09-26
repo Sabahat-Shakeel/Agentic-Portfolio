@@ -14,7 +14,7 @@ export default function Projectneightn(){
             <div className="flex flex-col space-y-7 text-center items-center justify-center pt-16">
 
                           <h1 className={`${merrweight.className}  text-4xl font-bold text-white/80`}> <strong className="text-[#ef4e39] "> N8N </strong>  Automation Projects</h1>
-                          <p className="m-3 text-white/60">Integrate n8n backend with Lovable frontend to deliver simple and user-friendly experiences <strong className="text-[#e74266] font-thin"> (Vibe Coding) </strong> </p>
+                          <p className="m-3 portrait:text-start text-white/60">Integrate n8n backend with Lovable frontend to deliver simple and user-friendly experiences <strong className="text-[#e74266] font-thin"> (Vibe Coding) </strong> </p>
                 </div>
 
 
