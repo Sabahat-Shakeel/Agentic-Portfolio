@@ -41,6 +41,28 @@ export default function Projectneightn(){
         </p>
         </Link>
       </div>
+
+ {/* Card 2 */}
+      
+    <div className="bg-black/80 rounded-lg shadow-lg  shadow-[#ef4e39] overflow-hidden flex flex-col items-center text-center p-6 w-full max-w-md  hover:scale-105  hover:shadow-lg hover:shadow-[#e74266] active:shadow-lg active:shadow-orange-500">
+        <Link href="https://chatbot-hr-sabahat.lovable.app/">
+        <Image
+
+           src="/pro1.jpg"
+          alt="Project 1"
+          width={500}
+          height={192}
+          className="w-full h-64 object-cover shadow shadow-[#ef4e39] rounded-md mb-4"
+        />
+        <h1 className="text-2xl md:text-3xl font-light text-[#72ff74] [text-shadow:0_0_1px_#72ff74] mb-2">FAQs AI Chatbot</h1>
+        <p className="text-base md:text-lg text-white/80 mb-4">Advanced AI Automation</p>
+        <p className="text-sm text-white/60 h-28">
+        An AI-powered FAQ chatbot that instantly answers customer queries and makes the e-commerce shopping experience fast and smooth.It provides 24/7 support, handling questions, products, and orders with ease..
+        </p>
+        </Link>
+      </div>
+
+
       </div>
 
        </div>
