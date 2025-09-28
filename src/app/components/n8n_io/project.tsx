@@ -52,7 +52,7 @@ export default function Projectneightn(){
           alt="Project 1"
           width={500}
           height={192}
-          className="w-full h-64 object-cover shadow shadow-[#ef4e39] rounded-md mb-4"
+          className="w-full h-full object-cover shadow shadow-[#ef4e39] rounded-md mb-4"
         />
         <h1 className="text-2xl md:text-3xl font-light text-[#72ff74] [text-shadow:0_0_1px_#72ff74] mb-2">FAQs AI Chatbot</h1>
         <p className="text-base md:text-lg text-white/80 mb-4">Advanced AI Automation</p>
