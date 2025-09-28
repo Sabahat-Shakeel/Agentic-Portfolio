@@ -45,7 +45,7 @@ export default function Projectneightn(){
  {/* Card 2 */}
       
     <div className="bg-black/80 rounded-lg shadow-lg  shadow-[#ef4e39] overflow-hidden flex flex-col items-center text-center p-6 w-full max-w-md  hover:scale-105  hover:shadow-lg hover:shadow-[#e74266] active:shadow-lg active:shadow-orange-500">
-        <Link href="https://chatbot-hr-sabahat.lovable.app/">
+        <Link href="https://glowmart-ai-chatbot.vercel.app/">
         <Image
 
            src="/pro1.jpg"
