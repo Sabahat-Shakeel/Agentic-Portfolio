@@ -48,7 +48,7 @@ export default function Projectneightn(){
         <Link href="https://glowmart-ai-chatbot.vercel.app/">
         <Image
 
-           src="/pro1.jpg"
+           src="/pro2.png"
           alt="Project 1"
           width={500}
           height={192}
