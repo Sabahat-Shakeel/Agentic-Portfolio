@@ -17,7 +17,7 @@ const ChatBot = () => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: "1",
-      text: "Hello! How can I assist you today?",
+      text: "Hello! How can I help you today? Are you interested in sending a message to Sabahat, perhaps about project details?",
       sender: "bot",
       timestamp: new Date(),
     },
@@ -26,7 +26,7 @@ const ChatBot = () => {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  const WEBHOOK_URL = "https://shakeelsabahat521.app.n8n.cloud/webhook/sabahatpersonalassistant";
+const API_URL = "/api/chat";
 
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -52,7 +52,7 @@ const ChatBot = () => {
     setIsLoading(true);
 
     try {
-      const response = await fetch(WEBHOOK_URL, {
+      const response = await fetch(API_URL, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -98,17 +98,18 @@ const ChatBot = () => {
   return (
     <>
       {/* Toggle Button */}
-      <div className="fixed animate-pulse glass-card bottom-6 right-6 z-50">
+      <div className="fixed animate-bounce bottom-6 right-2 z-50 outline-[#ef4e39] outline-4 outline-dashed rounded-full bg-[#ef4e39]">
        
         <Button
           
           onClick={() => setIsOpen(!isOpen)}
-          className=" "
+          className="border-none"
+         
         >
           
           {isOpen ? <X className="w-6 h-6 text-primary " /> : <MessageCircle className="w-6 h-6 text-primary " />}
 
-          <span className="absolute -top-4 right-12 translate-x-1/2 px-2 py-1 text-xs font-medium text-white/80 bg-[#ef4e39] rounded-md opacity-0 hover:opacity-100 transition-opacity">
+          <span className="absolute -top-6  right-12 translate-x-1/2 px-2 py-1 text-xs font-medium text-white/80 bg-[#ef4e39] rounded-br-full opacity-0 hover:opacity-100 transition-opacity">
       Ask Assistant
     </span>
         </Button>
@@ -118,15 +119,17 @@ const ChatBot = () => {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-20 w-96 md:right-6 portrait:h-[500px] h-[450px] z-40 border-2 border-[#ef4e39] bg-black rounded-2xl shadow overflow-hidden flex flex-col ">
+        <div className="fixed bottom-20  portrait:w-96  portrait:h-[800px] md:right-6 w-10/12 h-[450px] z-40 border-2 border-[#ef4e39] bg-black rounded-2xl shadow overflow-hidden flex flex-col ">
           {/* Header */}
           <div className="p-4 border-b border-primary/10 bg-black flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
               <Bot className="w-5 h-5 text-[#72ff74]" />
             </div>
             <div>
-              <h3 className="font-semibold text-[#72ff74]">AI Assistant</h3>
-              <p className="text-xs text-white/60">Online 🟢</p>
+              <h3 className="font-semibold text-[#72ff74] ">AI Assistant</h3>
+              <p className="text-xs text-white/65 flex items-center gap-1">Online  
+               <span className="w-[6px] h-[6px] rounded-full" style={{ backgroundColor: "#7af57c" }}></span>
+               </p>
             </div>
           </div>
 
