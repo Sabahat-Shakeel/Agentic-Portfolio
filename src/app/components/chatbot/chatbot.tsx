@@ -118,7 +118,7 @@ const API_URL = "/api/chat";
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-20  portrait:w-96  portrait:h-[550px] md:right-6 w-10/12 h-[450px] z-40 border-2 border-[#ef4e39] bg-black rounded-2xl shadow overflow-hidden flex flex-col ">
+        <div className="fixed bottom-20  portrait:w-[379px] portrait:h-[600px] md:right-6 w-10/12 h-[450px] z-30 border-2 border-[#ef4e39] bg-black rounded-2xl shadow overflow-hidden flex flex-col ">
 
           {/* Header */}
           <div className="p-4 border-b border-primary/10 bg-black flex items-center gap-3">
