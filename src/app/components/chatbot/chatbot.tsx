@@ -4,6 +4,8 @@ import { useState, useRef, useEffect } from "react";
 import { Send, MessageCircle, X, Bot } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 interface Message {
   id: string;
@@ -147,7 +149,24 @@ const API_URL = "/api/chat";
                       : " text-white/90 rounded-bl-md"
                   }`}
                 >
-                  <p className="text-sm">{message.text}</p>
+                    <ReactMarkdown
+      remarkPlugins={[remarkGfm]}
+      components={{
+        p: ({node, ...props}) => (
+          <p style={{marginBottom: '0.5rem'}} {...props} />
+        ),
+        strong: ({node, ...props}) => (
+          <strong style={{fontWeight: '600'}} {...props} />
+        ),
+        ul: ({node, ...props}) => (
+          <ul style={{marginLeft: '1.5rem', listStyleType: 'disc'}} {...props} />
+        ),
+      }}
+    >
+      {message.text}
+    </ReactMarkdown>
+
+
                   <p className="text-xs opacity-70 mt-1">
                     {message.timestamp.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
                   </p>
