@@ -15,7 +15,7 @@ export async function POST(req: Request) {
     const data = await response.json();
     
     return NextResponse.json({
-         response: data.response || "Sorry, no response from LLM.",
+         response: data.response || "Sorry, no response from LLM or Trial Ended.",
     });
   } catch (error) {
     console.error("Error in webhook request:", error);
