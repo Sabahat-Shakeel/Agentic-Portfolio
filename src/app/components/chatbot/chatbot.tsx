@@ -152,13 +152,13 @@ const API_URL = "/api/chat";
                     <ReactMarkdown
       remarkPlugins={[remarkGfm]}
       components={{
-        p: ({node, ...props}) => (
+        p: (props) => (
           <p style={{marginBottom: '0.5rem'}} {...props} />
         ),
-        strong: ({node, ...props}) => (
+        strong: (props) => (
           <strong style={{fontWeight: '600'}} {...props} />
         ),
-        ul: ({node, ...props}) => (
+        ul: (props) => (
           <ul style={{marginLeft: '1.5rem', listStyleType: 'disc'}} {...props} />
         ),
       }}
