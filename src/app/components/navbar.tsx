@@ -48,7 +48,7 @@ function Navbar() {
             </button>
           </div>
 
-          <ul className={`${merrweight.className} flex flex-col gap-8  text-white/60 text-lg`}>
+          <ul className={`${merrweight.className} flex flex-col gap-8  text-[#5f9646] text-lg`}>
             <li className="hover:scale-105">
               <Link href="/" onClick={toggleMenu}>
                 Home
@@ -66,10 +66,18 @@ function Navbar() {
                 Contact
               </Link>
             </li>
+
+      
+             <li className="hover:scale-105 text-red-400 ">
+              <Link href="/components/certificate" onClick={toggleMenu}>
+                Assessment Result
+              </Link>
+            </li>
+          
             {/* <hr className='shadow-2xl text-slate-500 shadow-slate-400'/> */}
           </ul>
       
-<div className={`${merrweight.className} mt-20 font-serif text-white/80 text-xl  `}>
+<div className={`${merrweight.className} mt-20 font-serif text-white/80 text-xl `}>
 
  <Link href={"https://github.com/Sabahat-Shakeel"}><button className="rounded px-2 py-1 bg-[#ef4e39] hover:underline hover:underline-offset-4 hover:opacity-85">
     Go To Github 
@@ -96,6 +104,10 @@ function Navbar() {
             
             <li className="hover:scale-110  hover:ease-in-out transition-transform" >
               <Link href="mailto:syedasabahatshakeel@gmail.com">Contact</Link>
+            </li>
+
+             <li className=" hover:scale-110  hover:ease-in-out transition-transform text-red-400" >
+              <Link href="/components/certificate">Assessment Result</Link>
             </li>
           </ul>
         </nav>
