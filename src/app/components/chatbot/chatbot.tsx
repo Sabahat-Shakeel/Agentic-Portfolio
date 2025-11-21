@@ -100,7 +100,7 @@ const API_URL = "/api/chat";
   return (
     <>
       {/* Toggle Button */}
-      <div className="fixed animate-bounce bottom-6 right-2 z-50 outline-[#ef4e39] outline-4 outline-dashed rounded-full bg-[#ef4e39]">
+      <div className="fixed animate-bounce bottom-6 right-2 z-50 outline-[#ef4e39] rounded-full bg-[#ef4e39]">
        
         <Button
           
@@ -120,7 +120,7 @@ const API_URL = "/api/chat";
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-20  portrait:w-[379px] portrait:h-[600px] md:right-6 w-10/12 h-[450px] z-30 border-2 border-[#ef4e39] bg-black rounded-2xl shadow overflow-hidden flex flex-col ">
+        <div className="fixed bottom-20  portrait:w-[379px] portrait:h-[600px] md:right-6 w-10/12 h-[450px] z-30 border border-[#ef4e39] bg-black rounded-2xl shadow overflow-hidden flex flex-col ">
 
           {/* Header */}
           <div className="p-4 border-b border-primary/10 bg-black flex items-center gap-3">

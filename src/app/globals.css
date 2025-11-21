@@ -6,7 +6,14 @@
 
 :root {
   --background: #000000;
-  --cyber-blue: #00f7ff;
+  /* --cyber-blue: #00f7ff; */
+  --star-locations:
+    100px 200px #fff,
+    300px 500px #fff,
+    700px 120px #fff,
+    900px 900px #fff,
+    1200px 150px #fff,
+    1400px 700px #fff,
 }
 
 
@@ -71,50 +78,73 @@ html, body {
 
 
 
-
-
-
 body {
-  background: var(--background);
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  position: relative;
-  overflow-x: hidden;
-}
+  background-color: black;
 
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-      45deg,
-      transparent 49%,
-      var(--cyber-blue) 49%,
-      var(--cyber-blue) 51%,
-      transparent 51%
-    ),
-    linear-gradient(
-      -45deg,
-      transparent 49%,
-      var(--cyber-blue) 49%,
-      var(--cyber-blue) 51%,
-      transparent 51%
-    );
+  /* Soft yellow stars */
+  background-image:
+    radial-gradient(rgba(249, 54, 54, 0.845) 1px, transparent 1px),
+    radial-gradient(rgba(255, 0, 85, 0.581) 1px, transparent 1px);
   background-size: 50px 50px;
-  opacity: 0.1;
-  animation: slide 20s linear infinite;
-  pointer-events: none;
+  background-position: 0 0, 25px 25px;
+
+  
+
+  /* Animations (safe for SSR) */
+  animation:
+    stars-move 30s ease-in infinite,
+    stars-shuffle 15s ease-in-out infinite;
 }
 
-@keyframes slide {
+/* Navbar */
+header {
+  position: relative;
+  z-index: 1;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+/* Footer */
+footer {
+  position: relative;
+  z-index: 1;
+  padding: 16px;
+  font-weight: medium;
+}
+
+/* Main content */
+main {
+  min-height: calc(100vh - 128px);
+  padding: 16px;
+}
+
+/* ============================
+   ANIMATIONS
+   ============================ */
+
+/* Slow upward galaxy movement */
+@keyframes stars-move {
   0% {
-    background-position: 0 0;
+    background-position: 0 0, 25px 25px;
   }
   100% {
-    background-position: 50px 50px;
+    background-position: 0 1000px, 25px 1025px;
+  }
+}
+
+
+@keyframes stars-shuffle {
+  0% {
+    background-size: 50px 50px;
+  }
+  50% {
+    background-size: 53px 53px; 
+  }
+  100% {
+    background-size: 50px 50px;
   }
 }
