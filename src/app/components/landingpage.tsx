@@ -2,11 +2,11 @@ import { Merriweather } from "next/font/google"
 const merrweight = Merriweather({subsets:['latin-ext'] , weight :['900']})
 function HomePage() {
   return (
-<div className="flex flex-col items-center justify-center  h-min portrait:min-h-96 bg-gradient-to-tr from-yellow-400 via-black to-[#3cce3e] py-11 rounded-full portrait:rounded-full ">
+<div className="flex flex-col items-center justify-center  h-min portrait:min-h-96 bg-gradient-to-tr from-yellow-400 via-black to-[#3cce3e] sm:py-11 rounded-full portrait:rounded-full shadow-2xl shadow-yellow-900 ">
 
 
   <h1
-    className={`${merrweight.className} text-white/85  text-4xl sm:text-5xl lg:text-6xl font-extrabold  underline text-center px-4 sm:px-7 lg:px-28 lg:pt-11 `}
+    className={`${merrweight.className} text-white/85  text-3xl sm:text-5xl lg:text-6xl font-extrabold  underline text-center px-4 sm:px-7 lg:px-28 lg:pt-11 `}
   >
     Future of Automation with Agentic AI
   </h1>

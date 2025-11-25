@@ -57,19 +57,6 @@ html, body {
   height: 8px;
 }
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #c6c5cd, #c8cbd1); 
-  border-radius: 8px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(180deg, #9d93e8, #ffffff);
-}
-
 * {
   scrollbar-width: thin;
   scrollbar-color: #164c21 #000000 ;
