@@ -20,7 +20,7 @@ function Navbar() {
         className="portrait:flex portrait:justify-around portrait:items-start "
       
       >
-        <div className="md:hidden w-full py-2 cursor-pointer  fixed top-0 z-20 bg-black"   
+        <div className="md:hidden items-center justify-center text-center w-full py-2  cursor-pointer  fixed top-0 z-20 bg-pink-800 bg-opacity-55 "   
         
         onClick={toggleMenu}>
          
@@ -28,7 +28,7 @@ function Navbar() {
           <div className="w-4 h-1 ml-2 bg-[#72ff74] z-10 [text-shadow:0_0_20px_#72ff74] mb-1 rounded-b-full mt-1"></div>
         </div>
         <div className="sm:hidden flex justify-center w-80   ">
-          <h1 className={` font-extralight  ml-4 text-lg text-[#72ff74] [text-shadow:0_0_1px_#72ff74] z-30 p-4 `}>
+          <h1 className={` font-extralight  ml-4 text-lg text-[#72ff74] [text-shadow:0_0_1px_#72ff74] z-30 p-1 top-0 fixed`}>
             Sabahat
           </h1>
           
@@ -41,9 +41,9 @@ function Navbar() {
           <div className="absolute top-5 left-5 ">
             <button
               onClick={toggleMenu}
-              className="text-gray text-2xl text-[#72ff74]  [text-shadow:0_0_20px_#72ff74]  font-bold fixed top-0 z-20 mt-2"
+              className="text-gray text-3xl text-[#72ff74]  [text-shadow:0_0_20px_#72ff74]  font-bold fixed top-0 z-20 mt-2"
             >
-              &#8592;
+             &#10006;
            
             </button>
           </div>
@@ -88,7 +88,7 @@ function Navbar() {
         </div>
 
         <nav
-          className="portrait:hidden md:flex gap-8 p-4 justify-around "
+          className="portrait:hidden md:flex gap-8 p-4  mb-11 justify-around bg-black bg-opacity-45 "
        
         >
           <ul
