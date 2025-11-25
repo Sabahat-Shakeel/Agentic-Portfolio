@@ -2,7 +2,7 @@ import { Merriweather } from "next/font/google"
 const merrweight = Merriweather({subsets:['latin-ext'] , weight :['900']})
 function HomePage() {
   return (
-<div className="flex flex-col items-center justify-center  h-min portrait:min-h-96 bg-gradient-to-tr from-yellow-400 via-black to-[#3cce3e] sm:py-11 rounded-full portrait:rounded-full shadow-2xl shadow-yellow-900 ">
+<div className="flex flex-col items-center justify-center  h-min bg-gradient-to-tr from-yellow-400 via-black to-[#3cce3e] p-11 sm:rounded-full shadow-2xl shadow-yellow-900 portrait:rounded-full ">
 
 
   <h1
