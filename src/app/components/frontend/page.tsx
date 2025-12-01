@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Frontend() {
   return (
-    <section className="py-16 bg-gray-100 min-h-screen flex flex-col items-center justify-center">
+    <section className="py-16 bg-gray-100  min-h-screen flex flex-col items-center justify-center ">
       <div className="max-w-5xl mx-auto px-4 flex flex-col items-center justify-center text-center gap-11">
         <Link
           href="https://huggingface.co/spaces/sabahat12/deploy-agent"

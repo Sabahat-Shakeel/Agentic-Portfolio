@@ -100,7 +100,7 @@ const API_URL = "/api/chat";
   return (
     <>
       {/* Toggle Button */}
-      <div className="fixed animate-bounce bottom-6 right-2 z-50 outline-[#ef4e39] rounded-full bg-[#ef4e39]">
+      <div className="fixed animate-bounce bottom-6 right-2 z-50 outline-[#ef4e39] rounded-full  bg-gradient-to-tr from-pink-500 via-black to-[#3cce3e] shadow-2xl shadow-yellow-900">
        
         <Button
           
@@ -120,32 +120,32 @@ const API_URL = "/api/chat";
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-20  portrait:w-[379px] portrait:h-[600px] md:right-6 w-10/12 h-[450px] z-30 border border-[#ef4e39] bg-black rounded-2xl shadow overflow-hidden flex flex-col ">
+        <div className="fixed bottom-20  portrait:w-[379px] portrait:h-[600px] md:right-6 w-10/12 h-[450px] z-30 border border-pink-500 bg-black rounded-2xl shadow overflow-hidden flex flex-col ">
 
           {/* Header */}
-          <div className="p-4 border-b border-primary/10 bg-black flex items-center gap-3">
+          <div className="p-4 border-b border-primary/10 bg-pink-800 bg-opacity-45 flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
               <Bot className="w-5 h-5 text-[#72ff74]" />
             </div>
             <div>
               <h3 className="font-semibold text-[#72ff74] ">AI Assistant</h3>
-              <p className="text-xs text-white/65 flex items-center gap-1">Online  
+              <p className="text-xs text-white/75 flex items-center gap-1">Online  
                <span className="w-[6px] h-[6px] rounded-full" style={{ backgroundColor: "#7af57c" }}></span>
                </p>
             </div>
           </div>
 
           {/* Messages */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-4">
+          <div className="flex-1 overflow-y-auto p-4 space-y-4  ">
             {messages.map((message) => (
               <div
                 key={message.id}
-                className={`flex ${message.sender === "user" ? "justify-end" : "justify-start"}`}
+                className={`flex   ${message.sender === "user" ? "justify-end" : "justify-start"}`}
               >
                 <div
-                  className={`px-3 py-2 rounded-2xl max-w-[80%] ${
+                  className={`px-3 py-2 rounded-2xl max-w-[80%]  ${
                     message.sender === "user"
-                      ? "bg-[#ef4e39] text-white/90 rounded-br-md "
+                      ? "bg-[#3cce3e] text-black/90 rounded-tr-lg "
                       : " text-white/90 rounded-bl-md"
                   }`}
                 >
