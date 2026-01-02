@@ -10,7 +10,7 @@ export default function ResumeButton(){
       download="Sabahat_Resume.pdf"
       target="_blank"
       rel="noopener noreferrer"
-      className={`${merrweight.className} py-1 px-6 mt-5 run-border flex cursor-pointer text-xl text-white/95 hover:scale-105 `}
+      className={`${merrweight.className} z-20 py-1 px-6 mt-5 run-border flex cursor-pointer text-xl text-white/95 hover:scale-105 `}
     >
         Resume
     </Link>
