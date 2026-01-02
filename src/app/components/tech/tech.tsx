@@ -10,10 +10,10 @@ const merrweight = Merriweather({subsets:['latin-ext'] , weight :['900']})
 export default function TechStack(){
     return (
         <div className={`${sour_gummy.className} text-start text-purple-400`}> 
-            <h1 className={` ${merrweight.className} p-8  bg-gradient-to-r from-purple-500 via-pink-500 to-purple-400 bg-clip-text text-transparent text-center  text-4xl`}><GrTechnology className="inline mr-2 text-pink-500" />Tech Stack</h1>
+            <h1 className={`${merrweight.className} p-8  bg-gradient-to-r from-purple-500 via-pink-500 to-purple-400 bg-clip-text text-transparent text-center  text-4xl`}><GrTechnology className="inline mr-2 text-pink-500" />Tech Stack</h1>
             <p className={`text-lg text-center`}>AI-Driven Full Stack Development</p>
             <div className=" p-8 lg:m-9 text-lg">
-                <ul className=" lg:flex gap-16 underline underline-offset-8 decoration-pink-500">
+                <ul className="lg:flex gap-16 underline underline-offset-8 decoration-pink-500 portrait:space-y-4">
 
                     <li> <TbCircleDotFilled className="inline mr-2 text-pink-500" /> Python</li>
                     <li> <TbCircleDotFilled className="inline mr-2 text-pink-500" /> FastAPI</li>

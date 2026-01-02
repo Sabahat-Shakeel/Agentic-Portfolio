@@ -21,7 +21,7 @@ function Navbar() {
     <div className={`${isOpen ? "overflow-hidden" : ""}`}>
       <div className="portrait:flex portrait:justify-around portrait:items-start ">
       <div className="md:hidden items-center justify-center text-center w-full py-2 cursor-pointer  fixed top-0 z-20 bg-opacity-55 " onClick={toggleMenu}>
-      <div className="text-purple-400 pl-2 [text-shadow:0_0_20px_#bc82ca]"><AiOutlineMenuUnfold size={32}/>
+      <div className="text-purple-400 mt-3 pl-2 [text-shadow:0_0_20px_#bc82ca]"><AiOutlineMenuUnfold size={32}/>
       </div>
        </div>
         <div className="sm:hidden flex justify-end w-80"><h1><ResumeButton/></h1> </div>
@@ -32,7 +32,7 @@ function Navbar() {
           <div className="absolute top-5 left-5 ">
             <button
               onClick={toggleMenu}
-              className="text-purple-400 fixed top-0 z-20 mt-3 [text-shadow:0_0_20px_#bc82ca]"
+              className="text-purple-400 fixed top-0 z-20 mt-4  [text-shadow:0_0_20px_#bc82ca]"
             ><AiOutlineMenuFold size={32}/>
            </button>
           </div>
