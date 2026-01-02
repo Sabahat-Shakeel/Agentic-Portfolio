@@ -32,7 +32,7 @@ function Navbar() {
           <div className="absolute top-5 left-5 ">
             <button
               onClick={toggleMenu}
-              className="text-purple-400 fixed top-0 z-20 mt-4  [text-shadow:0_0_20px_#bc82ca]"
+              className="text-purple-400 fixed top-0 z-20 mt-4 text-shadow:0_0_20px_#bc82ca]"
             ><AiOutlineMenuFold size={32}/>
            </button>
           </div>
@@ -43,7 +43,7 @@ function Navbar() {
               <Link href="/" onClick={toggleMenu}>Home</Link>
             </li>
             <li className="hover:scale-105 hover:decoration-pink-500 hover:underline hover:underline-offset-8">
-              <Link href="/project" onClick={toggleMenu}>Projects</Link>
+              <Link href="#project" onClick={toggleMenu}>Projects</Link>
             </li>
             <li className="hover:scale-105 hover:decoration-pink-500 hover:underline hover:underline-offset-8">
               <Link href="mailto:syedasabahatshakeel@gmail.com" onClick={toggleMenu}>Contact</Link>

@@ -9,7 +9,7 @@ const merrweight = Merriweather({subsets:['latin-ext'] , weight :['900']})
 
 export default function ProjectTodos(){
   return(
-    <div className='mt-20'>
+    <div id="project" className='mt-20'>
     <h1 className={`${merrweight.className} p-4 text-5xl text-center bg-gradient-to-r from-purple-900 via-pink-500 to-purple-900 bg-clip-text text-transparent`}><FaBity className="inline-block m-3 mb-5 text-6xl text-pink-500 " /> PROJECTS </h1>
     
     <Link href ="https://intelligent-todo.vercel.app/"><div className="flex items-center justify-center mt-8 p-4 ">
