@@ -2,11 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-:root {
+ :root {
   --background: #000000;
-  /* --cyber-blue: #00f7ff; */
+   --cyber-blue: #00f7ff; 
   --star-locations:
     100px 200px #fff,
     300px 500px #fff,
@@ -14,16 +12,8 @@
     900px 900px #fff,
     1200px 150px #fff,
     1400px 700px #fff,
-}
+} 
 
-
-
-
-
-.light {
-  --background: #ffffff;  
-  --foreground: #000000;  
-}
 
 @media (prefers-color-scheme: white) {
   :root {
@@ -49,80 +39,50 @@ html, body {
   overflow-x: hidden;
 }
 
-
-
-
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
 * {
   scrollbar-width: thin;
-  scrollbar-color: #164c21 #000000 ;
+  scrollbar-color: #920156 #000000 ;
+
 }
-
-
-
 
 body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-color: black;
+  background: black;
 
-  /* Soft yellow stars */
   background-image:
-    radial-gradient(rgba(249, 54, 54, 0.845) 1px, transparent 1px),
-    radial-gradient(rgba(255, 0, 85, 0.581) 1px, transparent 1px);
-  background-size: 50px 50px;
+    /* radial-gradient(rgba(202, 53, 127, 0.845) 1px, transparent 1px), */
+    radial-gradient(rgba(202, 53, 127, 0.581) 1px, transparent 1px);
+  background-size: 20px 20px;
   background-position: 0 0, 25px 25px;
 
-  
 
-  /* Animations (safe for SSR) */
   animation:
-    stars-move 30s ease-in infinite,
-    stars-shuffle 15s ease-in-out infinite;
+    stars-move 10s ease-out infinite,
+    stars-shuffle 15s ease-in infinite;
 }
 
-/* Navbar */
-header {
-  position: relative;
-  z-index: 1;
-  padding: 16px;
-  font-weight: bold;
-  font-size: 24px;
-}
-
-/* Footer */
 footer {
   position: relative;
   z-index: 1;
   padding: 16px;
-  font-weight: medium;
-}
 
-/* Main content */
+} 
+
 main {
   min-height: calc(100vh - 128px);
   padding: 16px;
 }
 
-/* ============================
-   ANIMATIONS
-   ============================ */
-
-/* Slow upward galaxy movement */
 @keyframes stars-move {
   0% {
     background-position: 0 0, 25px 25px;
   }
   100% {
-    background-position: 0 1000px, 25px 1025px;
+    background-position: 0 100px, 25px 1025px;
   }
 }
-
 
 @keyframes stars-shuffle {
   0% {
@@ -134,4 +94,35 @@ main {
   100% {
     background-size: 50px 50px;
   }
+}
+
+.animated-border {
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(#09194d, #0b0b0b) padding-box,
+    linear-gradient(270deg, #1a1a1a, #552790, #0f172a, #1a1a1a) border-box;
+  background-size: 100% 100%, 400% 100%;
+  animation: borderRun 4s linear infinite;
+}
+
+@keyframes borderRun {
+  to { background-position: 0 0, 400% 0; }
+}
+
+.run-border {
+  
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(#0b0b0b, #0f174e) padding-box,
+    linear-gradient(90deg, #111, #2f1c79, #111) border-box;
+  background-size: 100% 100%, 300% 300%;
+  animation: run 3s linear infinite;
+}
+
+@keyframes run {
+  0% { background-position: 0 0, 0 0; }
+  100% { background-position: 0 0, 300% 0; }
 }

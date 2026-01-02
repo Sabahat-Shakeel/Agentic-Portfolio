@@ -1,11 +1,17 @@
 "use client";
-
 import { useState, useRef, useEffect } from "react";
-import { Send, MessageCircle, X, Bot } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+import { Send, Bot } from "lucide-react";
+import { FaTimesCircle } from "react-icons/fa";
+import { AiOutlineWechat } from "react-icons/ai";
+import AskAssistant from "@/component/ui/text";
+import { Button } from "@/component/ui/button";
+import { Input } from "@/component/ui/input";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import {Merriweather, Sour_Gummy} from 'next/font/google';
+
+const sour_gummy = Sour_Gummy({subsets:["latin"], weight:["400"]})
+const merrweight = Merriweather({subsets:['latin'] , weight :['900']})
 
 interface Message {
   id: string;
@@ -28,11 +34,9 @@ const ChatBot = () => {
   const [isLoading, setIsLoading] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
-const API_URL = "/api/chat";
-
+  const API_URL = "/api/chat";
   const scrollToBottom = () => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  };
+    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });};
 
   useEffect(() => {
     scrollToBottom();
@@ -99,54 +103,37 @@ const API_URL = "/api/chat";
 
   return (
     <>
-      {/* Toggle Button */}
-      <div className="fixed animate-bounce bottom-6 right-2 z-50 outline-[#ef4e39] rounded-full  bg-gradient-to-tr from-pink-500 via-black to-[#3cce3e] shadow-2xl shadow-yellow-900">
-       
-        <Button
+   
+      <div className="fixed bottom-6 right-2 z-50 w-15 h-16 rounded-full bg-gradient-to-r from-pink-500 via-black to-purple-500 shadow-2xl shadow-yellow-900 border-none" >
+       <Button onClick={() => setIsOpen(!isOpen)} >
           
-          onClick={() => setIsOpen(!isOpen)}
-          className="border-none"
-         
-        >
-          
-          {isOpen ? <X className="w-6 h-6 text-primary " /> : <MessageCircle className="w-6 h-6 text-primary " />}
-
-          <span className="absolute -top-6  right-12 translate-x-1/2 px-2 py-1 text-xs font-medium text-white/80 bg-[#ef4e39] rounded-br-full opacity-0 hover:opacity-100 transition-opacity">
-      Ask Assistant
-    </span>
-        </Button>
-
-</div>
+          {isOpen ? <FaTimesCircle color="white" className="mt-7 text-primary " /> : <AiOutlineWechat  size={58} color="white"  className=" mt-8 text-4xl" /> }
+         <div className="fixed bottom-20 right-2 mb-2"> <AskAssistant /></div> </Button></div>
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed bottom-20  portrait:w-[379px] portrait:h-[600px] md:right-6 w-10/12 h-[450px] z-30 border border-pink-500 bg-black rounded-2xl shadow overflow-hidden flex flex-col ">
+        <div className="fixed lg:right-32 bottom-20 portrait:right-2 portrait:w-[375px] portrait:h-[590px] md:right-6 w-9/12 h-[450px] z-30 border border-purple-500/60 bg-black rounded-2xl shadow overflow-hidden flex flex-col ">
 
-          {/* Header */}
-          <div className="p-4 border-b border-primary/10 bg-pink-800 bg-opacity-45 flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-              <Bot className="w-5 h-5 text-[#72ff74]" />
-            </div>
+       <div className="p-4 border-b border-primary/10 bg-gradient-to-r from-[#080B38] via-[#130101] to-[#080B38] bg-opacity-45 flex items-center gap-3">
+            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center"><Bot className="w-5 h-5 text-pink-400"/> </div>
             <div>
-              <h3 className="font-semibold text-[#72ff74] ">AI Assistant</h3>
-              <p className="text-xs text-white/75 flex items-center gap-1">Online  
-               <span className="w-[6px] h-[6px] rounded-full" style={{ backgroundColor: "#7af57c" }}></span>
-               </p>
+
+              <h3 className={`${merrweight.className} font-semibold bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 bg-clip-text text-transparent`}>AI Assistant</h3>
+              <p className={`${sour_gummy.className} text-xs text-purple-400 flex items-center gap-1`}>Online  
+               <span className="w-[8px] h-[8px] rounded-full" style={{ backgroundColor: "#7af57c" }}></span></p>
             </div>
           </div>
 
-          {/* Messages */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-4  ">
+         
+          <div className="flex-1 overflow-y-auto p-4 space-y-4 ">
             {messages.map((message) => (
               <div
                 key={message.id}
-                className={`flex   ${message.sender === "user" ? "justify-end" : "justify-start"}`}
-              >
-                <div
-                  className={`px-3 py-2 rounded-2xl max-w-[80%]  ${
+                className={`flex ${message.sender === "user" ? "justify-end" : "justify-start"}`}>
+                <div className={`px-3 py-2 rounded-2xl max-w-[80%] ${sour_gummy.className} ${
                     message.sender === "user"
-                      ? "bg-[#3cce3e] text-black/90 rounded-tr-lg "
-                      : " text-white/90 rounded-bl-md"
+                      ? "bg-gradient-to-r from-[#080B38] via-[#130101] to-[#080B38] text-purple-400 leading-relaxed rounded-tr-lg "
+                      : "rounded-bl-md bg-gradient-to-r from-[#080B38] via-[#130101] to-[#080B38] text-white"
                   }`}
                 >
                     <ReactMarkdown
@@ -165,17 +152,14 @@ const API_URL = "/api/chat";
     >
       {message.text}
     </ReactMarkdown>
-
-
-                  <p className="text-xs opacity-70 mt-1">
+    <p className="text-xs opacity-70 mt-1">
                     {message.timestamp.toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
                   </p>
                 </div>
               </div>
             ))}
-            {isLoading && <p className="text-sm text-white/90">💭</p>}
-            <div ref={messagesEndRef} />
-          </div>
+            {isLoading && <p className="text-sm  text-white/90">💭</p>}
+            <div ref={messagesEndRef} /></div>
 
           {/* Input */}
           <div className="p-4 border-t border-primary/10 text-white/90 bg-black flex gap-2">
@@ -185,10 +169,9 @@ const API_URL = "/api/chat";
               onKeyPress={handleKeyPress}
               placeholder="Type your message..."
               disabled={isLoading}
-              className="flex-1 border border-[#72ff74]"
+              className="flex-1 border border-purple-500/60"
             />
-            <Button onClick={sendMessage} disabled={!inputValue.trim() || isLoading}>
-              <Send className="w-10 h-10 " />
+            <Button onClick={sendMessage} disabled={!inputValue.trim() || isLoading}><Send className="w-10 h-10 text-purple-400" />
             </Button>
           </div>
         </div>

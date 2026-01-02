@@ -1,10 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
+import {Sour_Gummy} from "next/font/google"
+
+const sour_gummy = Sour_Gummy({subsets:["latin"], weight:["400"]})
+
 const Footer = () => {
   return (
-    <footer >
-        <h3 className="font-thin  flex flex-row justify-center text-[#72ff74] z-10 [text-shadow:0_0_1px_#72ff74] text-sm p-2">
-               © 2025 Sabahat Shakeel Showcase Powered by AI
+    <footer className="bg-gradient-to-r from-[#080B38] via-[#130101] to-[#080B38] bg-opacity-10">
+        <h3 className={`${sour_gummy.className} flex flex-row justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-purple-400 bg-clip-text text-transparent z-10 text-sm p-2 text-center`}>
+        © {new Date().getFullYear()} Sabahat Shakeel Showcase Powered by AI
         </h3>
        <div className="flex flex-row justify-center gap-4 pb-4 shadow-sm  ">
          <Link href = "https://www.linkedin.com/in/syeda-sabahat-shakeel">
