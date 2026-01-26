@@ -1,6 +1,6 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
-import { Send, Bot } from "lucide-react";
+import { Bot } from "lucide-react";
 import { FaTimesCircle } from "react-icons/fa";
 import { AiOutlineWechat } from "react-icons/ai";
 import AskAssistant from "@/component/ui/text";
@@ -8,10 +8,10 @@ import { Button } from "@/component/ui/button";
 import { Input } from "@/component/ui/input";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import {Merriweather, Sour_Gummy} from 'next/font/google';
+import { Sour_Gummy, Momo_Signature} from 'next/font/google';
 
 const sour_gummy = Sour_Gummy({subsets:["latin"], weight:["400"]})
-const merrweight = Merriweather({subsets:['latin'] , weight :['900']})
+const momo_signature = Momo_Signature({subsets:['latin'], weight :['400']})
 
 interface Message {
   id: string;
@@ -104,22 +104,22 @@ const ChatBot = () => {
   return (
     <>
    
-      <div className="fixed bottom-6 right-2 z-50 w-15 h-16 rounded-full bg-gradient-to-r from-pink-500 via-black to-purple-500 shadow-2xl shadow-yellow-900 border-none" >
+      <div className="fixed bottom-6 right-2 z-50 w-15 h-16 rounded-full bg-gradient-to-r from-white/80 via-black to-blue-500 shadow-2xl shadow-yellow-900 border-none" >
        <Button onClick={() => setIsOpen(!isOpen)} >
           
-          {isOpen ? <FaTimesCircle color="white" className="mt-7 text-primary " /> : <AiOutlineWechat  size={58} color="white"  className=" mt-8 text-4xl" /> }
+          {isOpen ? <FaTimesCircle color="white" className="mt-7 text-primary " /> : <AiOutlineWechat  size={58} color="white"  className=" mt-8  text-4xl" /> }
          <div className="fixed bottom-20 right-2 mb-2"> <AskAssistant /></div> </Button></div>
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed lg:right-32 lg:bottom-20 portrait:bottom-28 w-9/12 h-[450px] z-30 border border-purple-500/60 bg-black rounded-2xl shadow overflow-hidden flex flex-col portrait:w-full portrait:h-[570]">
+        <div className="fixed lg:right-32 lg:bottom-20 portrait:bottom-28 w-9/12 h-[450px] z-30 border-2 border-blue-700/60 bg-black rounded-2xl shadow overflow-hidden flex flex-col portrait:w-full portrait:h-[570]">
 
        <div className="p-4 border-b border-primary/10 bg-gradient-to-r from-[#080B38] via-[#130101] to-[#080B38] bg-opacity-45 flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center"><Bot className="w-5 h-5 text-pink-400"/> </div>
+            <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center"><Bot className="w-5 h-5 text-white/80 font-bold "/> </div>
             <div>
 
-              <h3 className={`${merrweight.className} font-semibold bg-gradient-to-r from-purple-500 via-pink-500 to-purple-500 bg-clip-text text-transparent`}>AI Assistant</h3>
-              <p className={`${sour_gummy.className} text-xs text-purple-400 flex items-center gap-1`}>Online  
+              <h3 className={`${momo_signature.className} font-semibold text-blue-500`}>AI Assistant</h3>
+              <p className={`${sour_gummy.className} text-xs text-white/80 flex items-center gap-1`}>Online  
                <span className="w-[8px] h-[8px] rounded-full" style={{ backgroundColor: "#7af57c" }}></span></p>
             </div>
           </div>
@@ -132,7 +132,7 @@ const ChatBot = () => {
                 className={`flex ${message.sender === "user" ? "justify-end" : "justify-start"}`}>
                 <div className={`px-3 py-2 rounded-2xl max-w-[80%] ${sour_gummy.className} ${
                     message.sender === "user"
-                      ? "bg-gradient-to-r from-[#080B38] via-[#130101] to-[#080B38] text-purple-400 leading-relaxed rounded-tr-lg "
+                      ? "bg-gradient-to-r from-[#080B38] via-[#130101] to-[#080B38] text-blue-300 leading-relaxed rounded-tr-lg "
                       : "rounded-bl-md bg-gradient-to-r from-[#080B38] via-[#130101] to-[#080B38] text-white"
                   }`}
                 >
@@ -169,9 +169,9 @@ const ChatBot = () => {
               onKeyPress={handleKeyPress}
               placeholder="Type your message..."
               disabled={isLoading}
-              className="flex-1 border border-purple-500/60"
+              className="flex-1 border border-blue-500/60"
             />
-            <Button onClick={sendMessage} disabled={!inputValue.trim() || isLoading}><Send className="w-10 h-10 text-purple-400" />
+            <Button onClick={sendMessage} disabled={!inputValue.trim() || isLoading } className = "text-sm sm:text-lg text-white/80 font-bold bg-[#16084a] border border-white/10">Send
             </Button>
           </div>
         </div>

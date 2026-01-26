@@ -6,8 +6,8 @@ const sour_gummy = Sour_Gummy({subsets:["latin"], weight:["400"]})
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-to-r from-[#080B38] via-[#130101] to-[#080B38] bg-opacity-10">
-        <h3 className={`${sour_gummy.className} flex flex-row justify-center bg-gradient-to-r from-purple-400 via-pink-500 to-purple-400 bg-clip-text text-transparent z-10 text-sm p-2 text-center`}>
+    <footer className="bg-gradient-to-r from-[#080B38] via-[#130101] to-[#080B38] bg-opacity-10 border border-b-0 border-l-0 border-r-0 border-t-white/10">
+        <h3 className={`${sour_gummy.className} flex flex-row justify-center text-blue-500 z-10 text-sm p-2 text-center`}>
         © {new Date().getFullYear()} Sabahat Shakeel Showcase Powered by AI
         </h3>
        <div className="flex flex-row justify-center gap-4 pb-4 shadow-sm  ">

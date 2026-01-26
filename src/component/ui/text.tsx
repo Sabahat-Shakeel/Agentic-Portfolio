@@ -18,7 +18,7 @@ export default function AskAssistant() {
 
   return (
     <p
-      className={`${sour_gummy.className} text-purple-500 transition-opacity duration-500 ${
+      className={`${sour_gummy.className} text-white/80 transition-opacity duration-500 ${
         visible ? "opacity-100" : "opacity-0"
       }`}
     >
