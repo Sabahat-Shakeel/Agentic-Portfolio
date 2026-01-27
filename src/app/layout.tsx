@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Full Stack Developer Portfolio",
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     title: "Full Stack Developer | Software Engineer",
     description:
       "Full Stack Developer portfolio .",
-    images: ["/og-image.png"],
+    images: ["/og/og-image.jpg"],
   },
 
   icons: {
@@ -119,21 +119,22 @@ export default function RootLayout({
               name: "Your Name",
               jobTitle: "Full Stack Developer",
               description:
-                "Professional Full Stack Agentid AI Developer and Software Engineer specializing in Next.js, React, MongoDB.",
+                "Professional Full Stack Agentid AI Developer and Software Engineer specializing in Next.js, React, MongoDB and Enabling AI on Your Web Applications.",
               url: "https://agentify-sbt.vercel.app",
               sameAs: [
                 "https://github.com/sabahat-shakeel",
                 "https://linkedin.com/in/syeda-sabahat-shakeel",
               ],
               knowsAbout: [
-                "python",
+                "Python",
                 "OpenAI Agents",
                 "Next.js",
                 "React",
                 "TypeScript",
                 "MongoDB",
+                "FasptAPI",
                 "REST APIs",
-                "Web Performance",
+                "Enbaling AI",
               ],
             }),
           }}
