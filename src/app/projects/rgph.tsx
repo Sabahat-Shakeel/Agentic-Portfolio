@@ -21,7 +21,11 @@ export default function ProjectBook(){
         Physical AI and Humanoid AI Book </h1>
       </Link>
       <p className={`${sour_gummy.className} text-start text-white/80 text-sm sm:text-lg mt-3 lg:p-6 p-1 `}>This Docusaurus project presents a comprehensive book on Physical AI and Humanoid AI, designed with a clean, scalable documentation architecture. It integrates an intelligent RAG&#8209;based chatbot to enable contextual question answering directly from the book&rsquo;s knowledge base.</p>
-   
+      
+      <Link
+      href="/projects/seemoreprojects">
+       <p className={`${sour_gummy.className} p-6 text-center text-sm sm:text-lg text-white/70 underline underline-offset-4 `}>see more...</p>
+      </Link>
        <div className="portrait:hidden flex item-center justify-center m-11">
         < ResumeButton />
        </div>

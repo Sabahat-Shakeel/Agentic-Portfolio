@@ -26,6 +26,7 @@ export default function ProjectTodos(){
       <p className={`${sour_gummy.className} text-start p-1 mt-3 text-white/80 text-sm sm:text-lg lg:p-6 `}>This full-stack Todo application integrates an AI-powered chatbot to create an intelligent task management experience, using a FastAPI backend with OpenAI Agent SDK for natural language task creation, updating, and deletion, while a Next.js frontend ensures real-time UI rendering, clean state management, and seamless user interaction through a modern, scalable, and production-ready architecture.</p>
       <ProjectStreamHub/>
       <ProjectBook/>
+ 
     </div>
   )
 }
