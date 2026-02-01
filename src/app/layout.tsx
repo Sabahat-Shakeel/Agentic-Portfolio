@@ -61,9 +61,9 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Full Stack Developer | Next.js & React Software Engineer",
+      "Full Stack Agentic AI Developer | Python, Typescript, OpenAI Agents SDK, FastAPI, Next.js & React Software Engineer, MongoDB, ",
     description:
-      "A professional Full Stack Developer building high-performance AI web applications.",
+      "A professional Full Stack Agentic AI Developer building high-performance AI web applications.",
     url: "https://agentify-sbt.vercel.app",
     siteName: "My Portfolio",
     locale: "en_US",

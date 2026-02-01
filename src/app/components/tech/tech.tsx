@@ -30,12 +30,35 @@ export default function TechStack(){
 
             </div>
             <div><h1 className="sm:text-xl text-lg font-bold text-blue-500 mt-8"> <TiArrowMaximiseOutline className="inline  text-blue-500"/>Short Classification</h1>
-               <ul className="mt-6 p-1 text-sm sm:text-lg leading-relaxed text-balance">
-
-                    <li> Python, FastAPI < FaLongArrowAltRight className="inline m-3"/> Backend Tech Stack</li>
-                    <li>OpenAI SDK < FaLongArrowAltRight className="inline m-3"/> AI / LLM Integration</li>
-                    <li>n8n < FaLongArrowAltRight className="inline m-3"/> Automation & Workflow Tool</li>
-
+               <ul className="mt-6 p-1 text-sm sm:text-lg leading-relaxed sm:space-y-12 space-y-10 text-balance">
+                <li>
+                <strong className="underline underline-offset-8 decoration-blue-500 ">Frontend (SEO & Reactive UI)</strong>
+                  <ul className="p-4">
+                     <li>Next.js (SEO optimized, SSR / SSG)</li>
+                     <li>React.js (highly reactive, component-based UI)</li></ul>
+                 </li>
+                     <li>
+                        <strong  className="underline underline-offset-8 decoration-blue-500 ">Backend (Full Stack Architecture)</strong>
+                    <ul className="p-4">
+                        <li>Python</li>
+                        <li>FastAPI (high-performance, scalable REST APIs)</li></ul>
+                     </li>
+                      <li>
+                          <strong  className="underline underline-offset-8 decoration-blue-500 ">Databases (Data-Driven Systems)</strong>
+                        <ul className="p-4">
+                          <li>MongoDB (NoSQL, schema-flexible data handling)</li>
+                          <li>PostgreSQL (Relational, structured & transactional data)</li></ul>
+                      </li> 
+                        <li>
+                            <strong  className="underline underline-offset-8 decoration-blue-500 ">AI / LLM Integration</strong>
+                         <ul className="p-4">
+                              <li>OpenAI SDK (LLM-powered features, AI workflows)</li></ul>
+                       </li>
+                         <li>
+                          <strong  className="underline underline-offset-8 decoration-blue-500 ">Automation & Workflows</strong>
+                          <ul className="p-4">
+                        <li>n8n (process automation, data pipelines, system integrations)</li></ul>
+                       </li>
                 </ul>
             </div>
             <div><h1 className="sm:text-xl text-lg font-bold text-blue-500 mt-8"><TiArrowMaximiseOutline className="inline  text-blue-500"/>AI Model Providers</h1>

@@ -112,7 +112,7 @@ const ChatBot = () => {
 
       {/* Chat Window */}
       {isOpen && (
-        <div className="fixed lg:right-32 lg:bottom-20 portrait:bottom-28 w-9/12 h-[450px] z-30 border-2 border-blue-700/60 bg-black rounded-2xl shadow overflow-hidden flex flex-col portrait:w-full portrait:h-[570]">
+        <div className="fixed lg:right-32 lg:bottom-20 portrait:bottom-28 max-w-full h-[450px] z-30 border-2 border-blue-700/60 bg-black rounded-2xl shadow overflow-hidden flex flex-col portrait:w-full portrait:h-[570]">
 
        <div className="p-4 border-b border-primary/10 bg-gradient-to-r from-[#080B38] via-[#130101] to-[#080B38] bg-opacity-45 flex items-center gap-3">
             <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center"><Bot className="w-5 h-5 text-white/80 font-bold "/> </div>
