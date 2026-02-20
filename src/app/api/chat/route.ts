@@ -4,7 +4,7 @@ export async function POST(req: Request) {
   try {
     const body = await req.json();
 
-    const response = await fetch(process.env.WEBHOOK_URL as string, {
+    const response = await fetch(process.env.NEXT_PUBLIC_WEBHOOK_URL as string, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

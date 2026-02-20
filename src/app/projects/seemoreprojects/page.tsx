@@ -1,12 +1,9 @@
-"use client"
 import Link from "next/link"
-
 import Projectneightn from "./project"
 import {Sour_Gummy, Momo_Signature } from "next/font/google"
 
 const momo_signature = Momo_Signature({subsets:['latin'], weight :['400']})
 const sour_gummy = Sour_Gummy({subsets:["latin"], weight:["400"]})
-
 
 export default function ProjectCards() {
   return (

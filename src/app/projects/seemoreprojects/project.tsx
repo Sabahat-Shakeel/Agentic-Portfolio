@@ -3,8 +3,6 @@ import {Sour_Gummy, Momo_Signature } from "next/font/google"
 
 const momo_signature = Momo_Signature({subsets:['latin'], weight :['400']})
 const sour_gummy = Sour_Gummy({subsets:["latin"], weight:["400"]})
-
-
 export default function Projectneightn() {
   return (
     <div className={`${sour_gummy.className} mx-auto min-h-screen flex flex-col items-center justify-center`}>
